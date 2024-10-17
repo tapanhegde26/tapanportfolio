@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tapan Hegde - Site Reliability Engineer</title>
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -27,20 +26,23 @@
         .section {
             margin-bottom: 2rem;
         }
-        .skills-table {
+        table {
             width: 100%;
             border-collapse: collapse;
         }
-        .skills-table th, .skills-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
             text-align: left;
         }
-        .skills-table th {
-            background-color: #f4f4f4;
+        th {
+            background-color: #f2f2f2;
         }
-        .skills-table td i {
-            margin-right: 8px;
+        .contact-icons {
+            display: flex;
+            gap: 10px;
         }
         .contact-icons a {
             font-size: 1.5rem;
@@ -67,42 +69,34 @@
         <!-- Skills Section -->
         <section class="section">
             <h2>Skills</h2>
-            <table class="skills-table">
+            <table>
                 <tr>
                     <th>Category</th>
                     <th>Technologies</th>
                 </tr>
                 <tr>
-                    <td>Cloud Platforms</td>
-                    <td><i class="fab fa-aws"></i> AWS, GCP, Azure</td>
+                    <td>Infrastructure & Cloud Platforms</td>
+                    <td>AWS, GCP, Azure, EKS, AKS, VM Scale Sets, CloudFormation, CloudWatch, VPC, Subnets, EC2, S3, ALB, ASG, Azure Monitor, Consul, Vault</td>
                 </tr>
                 <tr>
-                    <td>Infrastructure as Code</td>
-                    <td><i class="fas fa-server"></i> Terraform, AWS CloudFormation, Ansible</td>
+                    <td>Containerization & Orchestration</td>
+                    <td>Kubernetes, Docker, Helm, Linkerd</td>
                 </tr>
                 <tr>
-                    <td>Orchestration & Containerization</td>
-                    <td><i class="fab fa-kubernetes"></i> Kubernetes, Docker, Helm, AWS EKS, Azure AKS</td>
+                    <td>Infrastructure as Code (IaC)</td>
+                    <td>Terraform, Ansible, CloudFormation</td>
                 </tr>
                 <tr>
-                    <td>CI/CD Tools</td>
-                    <td><i class="fab fa-git"></i> Jenkins, GitLab, GitHub Actions, Maven, ArgoCD</td>
-                </tr>
-                <tr>
-                    <td>Scripting & Programming</td>
-                    <td><i class="fab fa-python"></i> Python, Bash</td>
+                    <td>CI/CD & Automation</td>
+                    <td>Jenkins, GitLab, GitHub Actions, ArgoCD, Maven, Bash scripting, Python3, PromQL</td>
                 </tr>
                 <tr>
                     <td>Monitoring & Logging</td>
-                    <td><i class="fas fa-chart-line"></i> Prometheus, Grafana, EFK (Elasticsearch, Fluentd, Kibana), AWS CloudWatch</td>
+                    <td>Prometheus, Grafana, EFK Stack, Kafka, Postgres, RabbitMQ</td>
                 </tr>
                 <tr>
-                    <td>Automation</td>
-                    <td><i class="fas fa-tools"></i> Kafka, Consul, Vault, RabbitMQ</td>
-                </tr>
-                <tr>
-                    <td>Authorization & Security</td>
-                    <td><i class="fas fa-lock"></i> Zero Trust Security, Vault</td>
+                    <td>Security</td>
+                    <td>Zero Trust Security, Vault, Consul</td>
                 </tr>
             </table>
         </section>
@@ -112,13 +106,13 @@
             <h2>Experience</h2>
 
             <div class="experience-item">
-                <h3>Site Reliability Engineer - Xoriant Technologies </h3>
+                <h3>Site Reliability Engineer - Xoriant Technologies</h3>
                 <p>Nov 2023 – Present</p>
                 <ul>
-                    <li>Established end-to-end standalone and shared Kubernetes clusters in AWS and GCP environments.</li>
-                    <li>Optimized cloud resource usage and implemented alert mechanisms to ensure efficiency.</li>
-                    <li>Designed migration solutions for transitioning services to GNS-based architecture.</li>
-                    <li>Developed CI/CD pipelines using GitHub Actions for seamless deployment across environments.</li>
+                    <li>Established an end-to-end standalone and shared Kubernetes clusters in AWS and GCP environments.</li>
+                    <li>Optimized cloud resource usage and implemented alert mechanisms.</li>
+                    <li>Designed solutions for migration of services to GNS-based architecture.</li>
+                    <li>Developed CI/CD pipelines using GitHub Actions for seamless deployments.</li>
                 </ul>
             </div>
 
@@ -128,19 +122,39 @@
                 <ul>
                     <li>Led the development of self-service models for infrastructure provisioning and Kubernetes cluster creation.</li>
                     <li>Designed blue-green deployment strategies and set up Jenkins pipelines and Helm charts.</li>
-                    <li>Implemented EFK stack and Prometheus for efficient monitoring across multi-cloud environments.</li>
+                    <li>Implemented EFK stack and Prometheus for monitoring multi-cloud environments.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
-                <h3>Advisory Consultant - IBM India Pvt Ltd </h3>
+                <h3>Advisory Consultant - IBM India Pvt Ltd</h3>
                 <p>Sept 2018 – June 2022</p>
                 <ul>
                     <li>Implemented CI/CD pipelines to automate application deployment across AWS environments.</li>
                     <li>Utilized Terraform and CloudFormation for automated infrastructure management.</li>
-                    <li>Set up Docker-based containerization and Kubernetes for streamlined deployment processes.</li>
+                    <li>Set up Docker and Kubernetes for streamlined deployments.</li>
                 </ul>
             </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/6S5M86V8N8D8" target="_blank">IBM Data Science Specialization</a></li>
+                <li><a href="https://university.gitlab.com/c/SNDn7rKYT9yIYKdbC14e4Q" target="_blank">GitLab CI Fundamentals</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/certificate/4NGZRG4CP5C5" target="_blank">Machine Learning with Python</a></li>
+            </ul>
+        </section>
+
+        <!-- Accomplishments Section -->
+        <section class="section">
+            <h2>Accomplishments</h2>
+            <ul>
+                <li>Received Bravo award from Honeywell for exceptional engineering efforts on multi-tenancy projects.</li>
+                <li>Received Employee of the Month award 3 times at IBM for excellence in DevOps and automation.</li>
+                <li>Appreciated by SAP Ariba for reducing manual work by 23% through process automation.</li>
+            </ul>
         </section>
 
         <!-- Contact Section -->
