@@ -27,39 +27,20 @@
         .section {
             margin-bottom: 2rem;
         }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
         }
-        .skill {
-            background-color: #3498db;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
+        .skills-table th, .skills-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
         }
-        .experience-item {
-            margin-bottom: 1rem;
+        .skills-table th {
+            background-color: #f4f4f4;
         }
-        ul {
-            padding-left: 1.5rem;
-        }
-        .certifications ul, .experience-item ul {
-            list-style-type: disc;
-        }
-        .contact a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        .contact-icons {
-            display: flex;
-            gap: 10px;
+        .skills-table td i {
+            margin-right: 8px;
         }
         .contact-icons a {
             font-size: 1.5rem;
@@ -86,21 +67,44 @@
         <!-- Skills Section -->
         <section class="section">
             <h2>Skills</h2>
-            <div class="skills">
-                <span class="skill"><i class="fab fa-docker"></i> Docker</span>
-                <span class="skill"><i class="fab fa-kubernetes"></i> Kubernetes</span>
-                <span class="skill"><i class="fab fa-aws"></i> AWS</span>
-                <span class="skill"><i class="fab fa-google"></i> GCP</span>
-                <span class="skill"><i class="fab fa-microsoft"></i> Azure</span>
-                <span class="skill"><i class="fas fa-code-branch"></i> Git</span>
-                <span class="skill"><i class="fab fa-python"></i> Python</span>
-                <span class="skill"><i class="fab fa-linux"></i> Linux</span>
-                <span class="skill"><i class="fas fa-server"></i> Terraform</span>
-                <span class="skill"><i class="fab fa-jenkins"></i> Jenkins</span>
-                <span class="skill"><i class="fab fa-ansible"></i> Ansible</span>
-                <span class="skill"><i class="fas fa-chart-line"></i> Prometheus</span>
-                <span class="skill"><i class="fas fa-tools"></i> CI/CD</span>
-            </div>
+            <table class="skills-table">
+                <tr>
+                    <th>Category</th>
+                    <th>Technologies</th>
+                </tr>
+                <tr>
+                    <td>Cloud Platforms</td>
+                    <td><i class="fab fa-aws"></i> AWS, GCP, Azure</td>
+                </tr>
+                <tr>
+                    <td>Infrastructure as Code</td>
+                    <td><i class="fas fa-server"></i> Terraform, AWS CloudFormation, Ansible</td>
+                </tr>
+                <tr>
+                    <td>Orchestration & Containerization</td>
+                    <td><i class="fab fa-kubernetes"></i> Kubernetes, Docker, Helm, AWS EKS, Azure AKS</td>
+                </tr>
+                <tr>
+                    <td>CI/CD Tools</td>
+                    <td><i class="fab fa-git"></i> Jenkins, GitLab, GitHub Actions, Maven, ArgoCD</td>
+                </tr>
+                <tr>
+                    <td>Scripting & Programming</td>
+                    <td><i class="fab fa-python"></i> Python, Bash</td>
+                </tr>
+                <tr>
+                    <td>Monitoring & Logging</td>
+                    <td><i class="fas fa-chart-line"></i> Prometheus, Grafana, EFK (Elasticsearch, Fluentd, Kibana), AWS CloudWatch</td>
+                </tr>
+                <tr>
+                    <td>Automation</td>
+                    <td><i class="fas fa-tools"></i> Kafka, Consul, Vault, RabbitMQ</td>
+                </tr>
+                <tr>
+                    <td>Authorization & Security</td>
+                    <td><i class="fas fa-lock"></i> Zero Trust Security, Vault</td>
+                </tr>
+            </table>
         </section>
 
         <!-- Work Experience Section -->
@@ -137,26 +141,6 @@
                     <li>Set up Docker-based containerization and Kubernetes for streamlined deployment processes.</li>
                 </ul>
             </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section class="section certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/6S5M86V8N8D8" target="_blank">IBM Data Science Specialization</a></li>
-                <li><a href="https://university.gitlab.com/c/SNDn7rKYT9yIYKdbC14e4Q" target="_blank">GitLab CI Fundamentals</a></li>
-                <li><a href="https://www.coursera.org/account/accomplishments/certificate/4NGZRG4CP5C5" target="_blank">Machine Learning with Python</a></li>
-            </ul>
-        </section>
-
-        <!-- Accomplishments Section -->
-        <section class="section">
-            <h2>Accomplishments</h2>
-            <ul>
-                <li>Received Bravo award from Honeywell for exceptional engineering efforts on multi-tenancy projects.</li>
-                <li>Received Employee of the Month award 3 times at IBM for excellence in DevOps and automation.</li>
-                <li>Appreciated by SAP Ariba for reducing manual work by 23% through process automation.</li>
-            </ul>
         </section>
 
         <!-- Contact Section -->
