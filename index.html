@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tapan Hegde - Site Reliability Engineer</title>
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -26,23 +27,20 @@
         .section {
             margin-bottom: 2rem;
         }
-        table {
+        .skills-table {
             width: 100%;
             border-collapse: collapse;
         }
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-        th, td {
-            padding: 10px;
+        .skills-table th, .skills-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
             text-align: left;
         }
-        th {
-            background-color: #f2f2f2;
+        .skills-table th {
+            background-color: #f4f4f4;
         }
-        .contact-icons {
-            display: flex;
-            gap: 10px;
+        .skills-table td i {
+            margin-right: 8px;
         }
         .contact-icons a {
             font-size: 1.5rem;
@@ -69,34 +67,50 @@
         <!-- Skills Section -->
         <section class="section">
             <h2>Skills</h2>
-            <table>
+            <table class="skills-table">
                 <tr>
                     <th>Category</th>
                     <th>Technologies</th>
                 </tr>
                 <tr>
-                    <td>Infrastructure & Cloud Platforms</td>
-                    <td>AWS, GCP, Azure, EKS, AKS, VM Scale Sets, CloudFormation, CloudWatch, VPC, Subnets, EC2, S3, ALB, ASG, Azure Monitor, Consul, Vault</td>
+                    <td>Cloud Platforms</td>
+                    <td><i class="fab fa-aws"></i> AWS, GCP, Azure</td>
                 </tr>
                 <tr>
-                    <td>Containerization & Orchestration</td>
-                    <td>Kubernetes, Docker, Helm, Linkerd</td>
+                    <td>Infrastructure as Code</td>
+                    <td><i class="fas fa-server"></i> Terraform, AWS CloudFormation, Ansible</td>
                 </tr>
                 <tr>
-                    <td>Infrastructure as Code (IaC)</td>
-                    <td>Terraform, Ansible, CloudFormation</td>
+                    <td>Orchestration & Containerization</td>
+                    <td><i class="fab fa-kubernetes"></i> Kubernetes, Docker, Helm, AWS EKS, Azure AKS</td>
                 </tr>
                 <tr>
-                    <td>CI/CD & Automation</td>
-                    <td>Jenkins, GitLab, GitHub Actions, ArgoCD, Maven, Bash scripting, Python3, PromQL</td>
+                    <td>CI/CD Tools</td>
+                    <td><i class="fab fa-git"></i> Jenkins, GitLab, GitHub Actions, Maven, ArgoCD</td>
+                </tr>
+                <tr>
+                    <td>Scripting & Programming</td>
+                    <td><i class="fab fa-python"></i> Python, Bash</td>
                 </tr>
                 <tr>
                     <td>Monitoring & Logging</td>
-                    <td>Prometheus, Grafana, EFK Stack, Kafka, Postgres, RabbitMQ</td>
+                    <td><i class="fas fa-chart-line"></i> Prometheus, Grafana, EFK (Elasticsearch, Fluentd, Kibana), AWS CloudWatch</td>
                 </tr>
                 <tr>
-                    <td>Security</td>
-                    <td>Zero Trust Security, Vault, Consul</td>
+                    <td>Automation</td>
+                    <td><i class="fas fa-tools"></i> Kafka, Consul, Vault, RabbitMQ</td>
+                </tr>
+                <tr>
+                    <td>Authorization & Security</td>
+                    <td><i class="fas fa-lock"></i> Zero Trust Security, Vault</td>
+                </tr>
+                <tr>
+                    <td>Architectural Patterns</td>
+                    <td>Microservices Architecture, Service Oriented Architecture (SOA), Event-Driven Architecture</td>
+                </tr>
+                <tr>
+                    <td>Other Skills</td>
+                    <td>Agile, DevOps, Problem-Solving, Analytical Thinking, Detail-Oriented</td>
                 </tr>
             </table>
         </section>
@@ -110,9 +124,9 @@
                 <p>Nov 2023 – Present</p>
                 <ul>
                     <li>Established an end-to-end standalone and shared Kubernetes clusters in AWS and GCP environments.</li>
-                    <li>Optimized cloud resource usage and implemented alert mechanisms.</li>
-                    <li>Designed solutions for migration of services to GNS-based architecture.</li>
-                    <li>Developed CI/CD pipelines using GitHub Actions for seamless deployments.</li>
+                    <li>Worked on optimizing cloud resource usage and implemented alert mechanisms for the same.</li>
+                    <li>Designed solutions for migration of services from legacy architecture to GNS-based architecture.</li>
+                    <li>Developed CI/CD pipelines using GitHub Actions for seamless deployment across environments.</li>
                 </ul>
             </div>
 
@@ -121,8 +135,9 @@
                 <p>June 2022 – Nov 2023</p>
                 <ul>
                     <li>Led the development of self-service models for infrastructure provisioning and Kubernetes cluster creation.</li>
-                    <li>Designed blue-green deployment strategies and set up Jenkins pipelines and Helm charts.</li>
-                    <li>Implemented EFK stack and Prometheus for monitoring multi-cloud environments.</li>
+                    <li>Designed blue-green deployment strategies for efficient deployment on Kubernetes clusters.</li>
+                    <li>Set up Kubernetes, Jenkins pipelines, Helm charts, and an EFK stack for monitoring in multi-cloud environments.</li>
+                    <li>Developed automation scripts for schema, roles, and database creation in Postgres DB.</li>
                 </ul>
             </div>
 
@@ -130,31 +145,42 @@
                 <h3>Advisory Consultant - IBM India Pvt Ltd</h3>
                 <p>Sept 2018 – June 2022</p>
                 <ul>
-                    <li>Implemented CI/CD pipelines to automate application deployment across AWS environments.</li>
-                    <li>Utilized Terraform and CloudFormation for automated infrastructure management.</li>
-                    <li>Set up Docker and Kubernetes for streamlined deployments.</li>
+                    <li>Implemented CI/CD pipelines to automate building, testing, and deployment of applications.</li>
+                    <li>Used Terraform and AWS CloudFormation for automated infrastructure management.</li>
+                    <li>Configured AWS CloudWatch for monitoring applications, services, and infrastructure health.</li>
+                    <li>Set up containerization using Docker and Kubernetes for streamlined deployment processes.</li>
                 </ul>
             </div>
-        </section>
 
-        <!-- Certifications Section -->
-        <section class="section certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/6S5M86V8N8D8" target="_blank">IBM Data Science Specialization</a></li>
-                <li><a href="https://university.gitlab.com/c/SNDn7rKYT9yIYKdbC14e4Q" target="_blank">GitLab CI Fundamentals</a></li>
-                <li><a href="https://www.coursera.org/account/accomplishments/certificate/4NGZRG4CP5C5" target="_blank">Machine Learning with Python</a></li>
-            </ul>
-        </section>
+            <div class="experience-item">
+                <h3>Senior Software Engineer - Hashworks Pvt Ltd</h3>
+                <p>June 2017 – Sept 2018</p>
+                <ul>
+                    <li>Developed Spring Boot applications to create scalable RESTful APIs.</li>
+                    <li>Used Terraform to automate AWS infrastructure creation, reducing deployment time and errors.</li>
+                    <li>Implemented CI/CD pipelines in Jenkins to streamline development and release processes.</li>
+                </ul>
+            </div>
 
-        <!-- Accomplishments Section -->
-        <section class="section">
-            <h2>Accomplishments</h2>
-            <ul>
-                <li>Received Bravo award from Honeywell for exceptional engineering efforts on multi-tenancy projects.</li>
-                <li>Received Employee of the Month award 3 times at IBM for excellence in DevOps and automation.</li>
-                <li>Appreciated by SAP Ariba for reducing manual work by 23% through process automation.</li>
-            </ul>
+            <div class="experience-item">
+                <h3>Associate - British Telecom</h3>
+                <p>June 2016 – June 2017</p>
+                <ul>
+                    <li>Managed web service development and orchestrated communication between databases and SOAP backends.</li>
+                    <li>Led AWS infrastructure provisioning using Terraform, reducing operational costs by 40%.</li>
+                    <li>Migrated legacy systems to Dockerized microservices, reducing deployment times significantly.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Software Engineer - Torry Harris Integration Solutions</h3>
+                <p>Jan 2014 – April 2016</p>
+                <ul>
+                    <li>Designed end-to-end web service solutions using Oracle Service Bus within an SOA framework for clients.</li>
+                    <li>Led deployment of services into test and production environments, ensuring smooth transitions.</li>
+                    <li>Provided Level 3 support, including installation, maintenance, and environment setup of WebLogic servers.</li>
+                </ul>
+            </div>
         </section>
 
         <!-- Contact Section -->
