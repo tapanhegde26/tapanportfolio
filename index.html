@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tapan Hegde - Site Reliability Engineer</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -35,6 +37,9 @@
             color: white;
             padding: 5px 10px;
             border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
         .experience-item {
             margin-bottom: 1rem;
@@ -51,6 +56,17 @@
         }
         .contact a:hover {
             text-decoration: underline;
+        }
+        .contact-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .contact-icons a {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .contact-icons a:hover {
+            color: #3498db;
         }
     </style>
 </head>
@@ -71,20 +87,19 @@
         <section class="section">
             <h2>Skills</h2>
             <div class="skills">
-                <span class="skill">Kubernetes</span>
-                <span class="skill">Terraform</span>
-                <span class="skill">AWS</span>
-                <span class="skill">GCP</span>
-                <span class="skill">Azure</span>
-                <span class="skill">CI/CD</span>
-                <span class="skill">Docker</span>
-                <span class="skill">Python</span>
-                <span class="skill">Bash</span>
-                <span class="skill">Jenkins</span>
-                <span class="skill">Ansible</span>
-                <span class="skill">Prometheus</span>
-                <span class="skill">Grafana</span>
-                <span class="skill">EFK Stack</span>
+                <span class="skill"><i class="fab fa-docker"></i> Docker</span>
+                <span class="skill"><i class="fab fa-kubernetes"></i> Kubernetes</span>
+                <span class="skill"><i class="fab fa-aws"></i> AWS</span>
+                <span class="skill"><i class="fab fa-google"></i> GCP</span>
+                <span class="skill"><i class="fab fa-microsoft"></i> Azure</span>
+                <span class="skill"><i class="fas fa-code-branch"></i> Git</span>
+                <span class="skill"><i class="fab fa-python"></i> Python</span>
+                <span class="skill"><i class="fab fa-linux"></i> Linux</span>
+                <span class="skill"><i class="fas fa-server"></i> Terraform</span>
+                <span class="skill"><i class="fab fa-jenkins"></i> Jenkins</span>
+                <span class="skill"><i class="fab fa-ansible"></i> Ansible</span>
+                <span class="skill"><i class="fas fa-chart-line"></i> Prometheus</span>
+                <span class="skill"><i class="fas fa-tools"></i> CI/CD</span>
             </div>
         </section>
 
@@ -122,8 +137,6 @@
                     <li>Set up Docker-based containerization and Kubernetes for streamlined deployment processes.</li>
                 </ul>
             </div>
-
-            <!-- Add similar sections for your roles at Hashworks, British Telecom, and Torry Harris -->
         </section>
 
         <!-- Certifications Section -->
@@ -149,12 +162,11 @@
         <!-- Contact Section -->
         <section class="section contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:tapanhegde091@gmail.com">tapanhegde091@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/tapanhegde" target="_blank">LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/tapanhegde26" target="_blank">GitHub Profile</a></p>
-            <p>Medium: <a href="https://medium.com/@hegdetapan2609" target="_blank">Medium Profile</a></p>
+            <p>Email: <a href="mailto:tapanhegde091@gmail.com"><i class="fas fa-envelope"></i> tapanhegde091@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/tapanhegde" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/tapanhegde26" target="_blank"><i class="fab fa-github"></i> GitHub Profile</a></p>
+            <p>Medium: <a href="https://medium.com/@hegdetapan2609" target="_blank"><i class="fab fa-medium"></i> Medium Profile</a></p>
         </section>
     </main>
 </body>
 </html>
-
